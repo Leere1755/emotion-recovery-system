@@ -32,20 +32,10 @@ const BootingScreen = ({ onFinish }: { onFinish: () => void }) => {
 
   return (
     <div style={{
-    backgroundColor: '#000', 
-    color: '#00ff00', 
-    height: '100vh', 
-    width: '100%',     // ◀ 100vw를 100%로 수정!
-    display: 'flex', 
-    flexDirection: 'column', 
-    justifyContent: 'center', 
-    alignItems: 'center',
-    fontFamily: '"Courier New", monospace', 
-    position: 'fixed', 
-    top: 0, 
-    left: 0, 
-    zIndex: 100
-  }}>
+      backgroundColor: '#000', color: '#00ff00', height: '100vh', width: '100%',
+      display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center',
+      fontFamily: '"Courier New", monospace', position: 'fixed', top: 0, left: 0, zIndex: 100
+    }}>
       <div style={{ width: '80%', maxWidth: '500px' }}>
         {logs.map((log, i) => <p key={i} style={{ margin: '5px 0', fontSize: '14px' }}>{log}</p>)}
         <div style={{ border: '1px solid #00ff00', height: '20px', marginTop: '20px', position: 'relative' }}>
